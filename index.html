@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salesforce Productivity Tools</title>
+    <style>
+        /* Reset styling */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        /* General Styling */
+        body { font-family: Arial, sans-serif; color: #333; }
+        a { text-decoration: none; color: inherit; }
+        
+        /* Header */
+        header {
+            background-color: #00a1e0;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        header img { max-height: 40px; }
+        header h1 { font-size: 24px; }
+
+        /* Main Content */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .title { text-align: center; color: #00a1e0; margin-bottom: 20px; }
+
+        /* Search Box */
+        .search-box {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .search-input {
+            width: 100%;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border: 2px solid #00a1e0;
+            border-radius: 8px;
+            outline: none;
+        }
+
+        /* Tool Tiles 
+        .tools-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+
+        } */
+
+        .tools-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+        
+        .tool {
+            background-color: #f0f8ff;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .tool:hover { transform: scale(1.05); }
+        .tool-image {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .tool-content {
+            padding: 15px;
+            text-align: center;
+        }
+        .tool-title {
+            color: #005678;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .tool-description { color: #666; font-size: 14px; }
+
+        /* No Match Message */
+        .no-match {
+            text-align: center;
+            color: #999;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #00a1e0;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <a href="https://sfcronmaker.web.app"><img src="images/sffox_250175.png" alt="SalesforceFOx" id="logo"></a>
+        <h1>Salesforce Productivity Tools</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <h2 class="title">Discover the Best Salesforce Tools</h2>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" id="searchInput" class="search-input" placeholder="Search tools by title or description..." onkeyup="filterTools()">
+        </div>
+        
+        <div class="tools-grid" id="toolsGrid">
+            <!-- Tool Tile Example -->
+            <div class="tool" data-title="Tool 1" data-description="A powerful tool to boost your Salesforce productivity.">
+                <img src="images/SFTips.png" alt="Tool Image" class="tool-image">
+                <div class="tool-content">
+                    <a href="https://tool1.com" class="tool-title" target="_blank">Tool 1</a>
+                    <p class="tool-description">A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to
+                        boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.</p>
+                </div>
+            </div>
+            <div class="tool" data-title="Tool 2" data-description="Improve workflow efficiency with this great tool.">
+                <img src="images/template1.png" alt="Tool Image" class="tool-image">
+                <div class="tool-content">
+                    <a href="https://tool2.com" class="tool-title" target="_blank">Tool 2</a>
+                    <p class="tool-description">Improve workflow efficiency with this great tool.</p>
+                </div>
+            </div>
+            <div class="tool" data-title="Tool 1" data-description="A powerful tool to boost your Salesforce productivity.">
+                <img src="images/SFTips.png" alt="Tool Image" class="tool-image">
+                <div class="tool-content">
+                    <a href="https://tool1.com" class="tool-title" target="_blank">Tool 1</a>
+                    <p class="tool-description">A powerful tool to boost your Salesforce productivity.</p>
+                </div>
+            </div>
+            <div class="tool" data-title="Tool 2" data-description="Improve workflow efficiency with this great tool.">
+                <img src="images/template1.png" alt="Tool Image" class="tool-image">
+                <div class="tool-content">
+                    <a href="https://tool2.com" class="tool-title" target="_blank">Tool 2</a>
+                    <p class="tool-description">Improve workflow efficiency with this great tool.</p>
+                </div>
+            </div>
+            <div class="tool" data-title="Tool 1" data-description="A powerful tool to boost your Salesforce productivity.">
+                <img src="images/SFTips.png" alt="Tool Image" class="tool-image">
+                <div class="tool-content">
+                    <a href="https://tool1.com" class="tool-title" target="_blank">Tool 1</a>
+                    <p class="tool-description">A powerful tool to boost your Salesforce productivity.</p>
+                </div>
+            </div>
+            <!-- Add more tools here -->
+        </div>
+
+        <!-- No Match Message -->
+        <p id="noMatch" class="no-match" style="display: none;">No matching tools found.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 <a href="https://salesforcefox.com" target="_blank">SalesforceFox.com</a></p>
+    </footer>
+
+    <script>
+        function filterTools() {
+            const searchInput = document.getElementById("searchInput").value.toLowerCase();
+            const tools = document.querySelectorAll(".tool");
+            let matchFound = false;
+
+            tools.forEach(tool => {
+                const title = tool.getAttribute("data-title").toLowerCase();
+                const description = tool.getAttribute("data-description").toLowerCase();
+
+                if (title.includes(searchInput) || description.includes(searchInput)) {
+                    tool.style.display = "block";
+                    matchFound = true;
+                } else {
+                    tool.style.display = "none";
+                }
+            });
+
+            document.getElementById("noMatch").style.display = matchFound ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
