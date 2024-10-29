@@ -3,117 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salesforce Productivity Tools</title>
-    <style>
-        /* Reset styling */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        
-        /* General Styling */
-        body { font-family: Arial, sans-serif; color: #333; }
-        a { text-decoration: none; color: inherit; }
-        
-        /* Header */
-        header {
-            background-color: #00a1e0;
-            padding: 10px 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            color: #fff;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        header img { max-height: 40px; }
-        header h1 { font-size: 24px; }
+    <title>Salesforce Productivity Tools by SalesforceFox</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover the best productivity tools for Salesforce professionals. Our curated list includes essential tools for admins and developers to enhance Salesforce efficiency.">
+    <meta name="keywords" content="Salesforce productivity tools, Top Salesforce tools for admins, Top Salesforce tools for developers, Best Salesforce tools for developers, SalesforceFox">
+    <meta name="author" content="SalesforceFox">
+    
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="Top Salesforce Productivity Tools | SalesforceFox">
+    <meta property="og:description" content="Find the best productivity tools for Salesforce admins and developers. Boost your Salesforce efficiency with our curated tool selection.">
+    <meta property="og:image" content="https://tools.salesforcefox.com/images/sffoxLogo.jpg"> <!-- Replace with the actual URL of your image -->
+    <meta property="og:url" content="https://tools.salesforcefox.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SalesforceFox">
 
-        /* Main Content */
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Top Salesforce Productivity Tools By SalesforceFox",
+      "description": "Explore a curated list of the best productivity tools for Salesforce professionals. Perfect for admins and developers seeking to streamline Salesforce workflows.",
+      "url": "https://tools.salesforcefox.com",
+      "image": "https://tools.salesforcefox.com/images/sffoxLogo.jpg",
+      "publisher": {
+        "@type": "Organization",
+        "name": "SalesforceFox",
+        "url": "https://salesforcefox.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://salesforcefox.com/wp-content/uploads/2024/06/sffox_250175.webp"
         }
-        .title { text-align: center; color: #00a1e0; margin-bottom: 20px; }
-
-        /* Search Box */
-        .search-box {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        .search-input {
-            width: 100%;
-            max-width: 400px;
-            padding: 10px;
-            font-size: 16px;
-            border: 2px solid #00a1e0;
-            border-radius: 8px;
-            outline: none;
-        }
-
-        /* Tool Tiles 
-        .tools-grid {
-            display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-
-
-        } */
-
-        .tools-grid {
-            display: grid;
-            gap: 20px;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        }
-        
-        .tool {
-            background-color: #f0f8ff;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-        .tool:hover { transform: scale(1.05); }
-        .tool-image {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-        .tool-content {
-            padding: 15px;
-            text-align: center;
-        }
-        .tool-title {
-            color: #005678;
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            display: block;
-        }
-        .tool-description { color: #666; font-size: 14px; }
-
-        /* No Match Message */
-        .no-match {
-            text-align: center;
-            color: #999;
-            font-size: 18px;
-            margin-top: 20px;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #00a1e0;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Header -->
     <header>
-        <a href="https://sfcronmaker.web.app"><img src="images/sffox_250175.png" alt="SalesforceFOx" id="logo"></a>
+        <a href="https://tools.salesforcefox.com"><img src="images/sffoxLogo.png" alt="SalesforceFOx" id="logo"></a>
         <h1>Salesforce Productivity Tools</h1>
     </header>
 
@@ -129,18 +58,21 @@
         <div class="tools-grid" id="toolsGrid">
             <!-- Tool Tile Example -->
             <div class="tool" data-title="Tool 1" data-description="A powerful tool to boost your Salesforce productivity.">
-                <img src="images/SFTips.png" alt="Tool Image" class="tool-image">
+                <img src="images/Sfcronmakertool.png" alt="Tool Image" class="tool-image">
                 <div class="tool-content">
-                    <a href="https://tool1.com" class="tool-title" target="_blank">Tool 1</a>
-                    <p class="tool-description">A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to
-                        boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.A powerful tool to boost your Salesforce productivity.</p>
+                    <a href="https://sfcronmaker.web.app" class="tool-title" target="_blank">Salesforce Cron Maker</a>
+                    <span class="tool-tag">Admin</span><span class="tool-tag">Developer</span>
+                    <p class="tool-description">This web tool helps you build Salesforce Cron expressions with an easy-to-use interface. It allows you to input values for each field and provides a human-readable description of the resulting schedule.</p>
                 </div>
             </div>
             <div class="tool" data-title="Tool 2" data-description="Improve workflow efficiency with this great tool.">
-                <img src="images/template1.png" alt="Tool Image" class="tool-image">
+                <img src="images/sfi.png" alt="Tool Image" class="tool-image">
                 <div class="tool-content">
-                    <a href="https://tool2.com" class="tool-title" target="_blank">Tool 2</a>
-                    <p class="tool-description">Improve workflow efficiency with this great tool.</p>
+                    <div class="badge">Most Popular</div>
+                    <a href="https://tprouvot.github.io/Salesforce-Inspector-reloaded/#installation" class="tool-title" target="_blank">Salesforce Inspector Reloaded</a>
+                    <span class="tool-tag">Admin</span><span class="tool-tag">Developer</span>
+                    <p class="tool-description">This is browser extension that enhances Salesforce development by allowing users to inspect and manipulate data easily. It enables SOQL queries, record editing, and metadata access directly in the browser.
+                          It streamlines debugging and improves productivity for developers &amp; admins.</p>
                 </div>
             </div>
             <div class="tool" data-title="Tool 1" data-description="A powerful tool to boost your Salesforce productivity.">
@@ -171,31 +103,22 @@
         <p id="noMatch" class="no-match" style="display: none;">No matching tools found.</p>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 <a href="https://salesforcefox.com" target="_blank">SalesforceFox.com</a></p>
-    </footer>
 
-    <script>
-        function filterTools() {
-            const searchInput = document.getElementById("searchInput").value.toLowerCase();
-            const tools = document.querySelectorAll(".tool");
-            let matchFound = false;
+<!-- Footer -->
+<footer>
+    <div class="footer-text">
+    <a href="https://salesforcefox.com" target="_blank">  SalesforceFox.com</a>
+    </div>
+    <span class="footer-divider">|</span>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/company/sffox/" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                <path fill="#0078d4" d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5	V37z"></path><path d="M30,37V26.901c0-1.689-0.819-2.698-2.192-2.698c-0.815,0-1.414,0.459-1.779,1.364	c-0.017,0.064-0.041,0.325-0.031,1.114L26,37h-7V18h7v1.061C27.022,18.356,28.275,18,29.738,18c4.547,0,7.261,3.093,7.261,8.274	L37,37H30z M11,37V18h3.457C12.454,18,11,16.528,11,14.499C11,12.472,12.478,11,14.514,11c2.012,0,3.445,1.431,3.486,3.479	C18,16.523,16.521,18,14.485,18H18v19H11z" opacity=".05"></path><path d="M30.5,36.5v-9.599c0-1.973-1.031-3.198-2.692-3.198c-1.295,0-1.935,0.912-2.243,1.677	c-0.082,0.199-0.071,0.989-0.067,1.326L25.5,36.5h-6v-18h6v1.638c0.795-0.823,2.075-1.638,4.238-1.638	c4.233,0,6.761,2.906,6.761,7.774L36.5,36.5H30.5z M11.5,36.5v-18h6v18H11.5z M14.457,17.5c-1.713,0-2.957-1.262-2.957-3.001	c0-1.738,1.268-2.999,3.014-2.999c1.724,0,2.951,1.229,2.986,2.989c0,1.749-1.268,3.011-3.015,3.011H14.457z" opacity=".07"></path><path fill="#fff" d="M12,19h5v17h-5V19z M14.485,17h-0.028C12.965,17,12,15.888,12,14.499C12,13.08,12.995,12,14.514,12	c1.521,0,2.458,1.08,2.486,2.499C17,15.887,16.035,17,14.485,17z M36,36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698	c-1.501,0-2.313,1.012-2.707,1.99C24.957,25.543,25,26.511,25,27v9h-5V19h5v2.616C25.721,20.5,26.85,19,29.738,19	c3.578,0,6.261,2.25,6.261,7.274L36,36L36,36z"></path>
+            </svg>
+        </a>
+    </div>
+</footer>
 
-            tools.forEach(tool => {
-                const title = tool.getAttribute("data-title").toLowerCase();
-                const description = tool.getAttribute("data-description").toLowerCase();
-
-                if (title.includes(searchInput) || description.includes(searchInput)) {
-                    tool.style.display = "block";
-                    matchFound = true;
-                } else {
-                    tool.style.display = "none";
-                }
-            });
-
-            document.getElementById("noMatch").style.display = matchFound ? "none" : "block";
-        }
-    </script>
+<script src="scripts.js"></script>
 </body>
 </html>
