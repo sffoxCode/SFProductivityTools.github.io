@@ -4,9 +4,6 @@ function filterTools() {
     let matchFound = false;
 
     tools.forEach(tool => {
-        // const title = tool.getAttribute("data-title").toLowerCase();
-        // const description = tool.getAttribute("data-description").toLowerCase();
-
         const title = tool.querySelector(".tool-title").innerText.toLowerCase();
         const description = tool.querySelector(".tool-description").innerText.toLowerCase();
 
