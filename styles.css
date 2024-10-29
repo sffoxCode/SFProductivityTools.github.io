@@ -29,7 +29,7 @@ header h1 { font-size: 24px; }
 .tool-content { padding: 15px; text-align: center; }
 .tool-title { color: #005678; font-size: 18px; font-weight: bold; margin-bottom: 5px; display: block; }
 .tool-tag { display: inline-block; background-color: #00a1e0; color: #fff; padding: 3px 10px; border-radius: 15px; font-size: 12px; margin-bottom: 10px; margin: 2px; }
-.tool-description { color: #666; font-size: 14px; margin-top: 10px; cursor: pointer; }
+.tool-description { color: #666; font-size: 14px; margin-top: 10px;}
 .tool-description.collapsed { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
 .tool-description.expanded { max-height: 100px; transition: max-height 0.3s ease-in; }
 
