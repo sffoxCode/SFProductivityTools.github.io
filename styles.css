@@ -1,0 +1,106 @@
+/* General Styling */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; color: #333; }
+a { text-decoration: none; color: inherit; }
+
+/* Header */
+header { background-color: #00a1e0; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; color: #fff; position: sticky; top: 0; z-index: 1000; }
+header img { max-height: 40px; }
+header h1 { font-size: 24px; }
+
+/* Main Content */
+.container { padding: 20px; max-width: 1200px; margin: 0 auto; }
+.title { text-align: center; color: #00a1e0; margin-bottom: 20px; }
+
+/* Search Box */
+.search-box { display: flex; justify-content: center; margin-bottom: 20px; }
+.search-input { width: 100%; max-width: 400px; padding: 10px; font-size: 16px; border: 2px solid #00a1e0; border-radius: 8px; outline: none; }
+
+/* Filter and Pagination */
+.filter-buttons, .pagination { text-align: center; margin: 10px 0; }
+.filter-buttons button, .pagination button { background-color: #00a1e0; color: #fff; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-size: 14px; margin: 0 5px; }
+.filter-buttons button.active { background-color: #007bb3; }
+
+/* Tool Tiles */
+.tools-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+.tool { background-color: #f0f8ff; border-radius: 8px; overflow: hidden; transition: transform 0.3s; position: relative; }
+.tool:hover { transform: scale(1.05); }
+.tool-image { width: 100%; height: 200px; object-fit: cover; }
+.tool-content { padding: 15px; text-align: center; }
+.tool-title { color: #005678; font-size: 18px; font-weight: bold; margin-bottom: 5px; display: block; }
+.tool-tag { display: inline-block; background-color: #00a1e0; color: #fff; padding: 3px 10px; border-radius: 15px; font-size: 12px; margin-bottom: 10px; margin: 2px; }
+.tool-description { color: #666; font-size: 14px; margin-top: 10px; cursor: pointer; }
+.tool-description.collapsed { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
+.tool-description.expanded { max-height: 100px; transition: max-height 0.3s ease-in; }
+
+/* Badge */
+.badge {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: #f48c06; /* Use a color that contrasts with the tile */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/*
+
+
+/* Footer Styling */
+footer {
+    background-color: #00a1e0;
+    padding: 15px 20px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-text {
+    font-size: 14px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center; /* Aligns text vertically */
+}
+
+.footer-text a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Social Icon Styling */
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-icon svg {
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s;
+    vertical-align: middle; /* Ensures the icon aligns with text */
+}
+
+.social-icon:hover svg {
+    transform: scale(1.1);
+}
+
+/* Divider */
+.footer-divider {
+    color: #ffffff;
+    font-size: 14px;
+    align-self: center; /* Centers the divider with text and icon */
+}
+
+
