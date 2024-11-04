@@ -54,7 +54,14 @@
         <div class="search-box">
             <input type="text" id="searchInput" class="search-input" placeholder="Search tools by title or description..." onkeyup="filterTools()">
         </div>
-        
+
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="active" onclick="filterByTag('all')">All</button>
+            <button onclick="filterByTag('Admin')">Admin</button>
+            <button onclick="filterByTag('Developer')">Developer</button>
+        </div>
+
         <div class="tools-grid" id="toolsGrid">
             <!-- Tool Tile Example -->
             <div class="tool">
@@ -86,17 +93,29 @@
                 </div>
             </div>
             <div class="tool">
-                <img src="images/template1.png" alt="Tool Image" class="tool-image">
+                <img src="images/organizerTool.png" alt="ORGanizer" class="tool-image">
                 <div class="tool-content">
-                    <a href="https://tool2.com" class="tool-title" target="_blank">Tool 2</a>
-                    <p class="tool-description">Improve workflow efficiency with this great tool.</p>
+                    <a href="https://organizer.solutions/" class="tool-title" target="_blank">ORGanizer</a>
+                    <div class="badge">Most Popular</div>
+                    <span class="tool-tag">Admin</span>
+                    <p class="tool-description">This must have browser extension helps you store frequently used Accounts/ORGs'  username &amp; passeword securely for easy access. 
+                        It also provides Quick Links and more to save lots of time on your daily tasks</p>
                 </div>
             </div>
             <div class="tool">
-                <img src="images/SFTips.png" alt="Tool Image" class="tool-image">
+                <img src="images/packageGenerator.png" alt="Package.xml Generator" class="tool-image">
                 <div class="tool-content">
-                    <a href="https://tool1.com" class="tool-title" target="_blank">Tool 1</a>
-                    <p class="tool-description">A powerful tool to boost your Salesforce productivity.</p>
+                    <a href="https://marketplace.visualstudio.com/items?itemName=VignaeshRamA.sfdx-package-xml-generator" class="tool-title" target="_blank">Package.xml Generator</a>
+                    <span class="tool-tag">Developer</span>
+                    <p class="tool-description">This VS Code extention is great user interface tool to retrieve Metadata components without any hassle from Sandboxes during developement</p>
+                </div>
+            </div>
+            <div class="tool">
+                <img src="images/flowvisualiser.png" alt="Flow Visualiser" class="tool-image">
+                <div class="tool-content">
+                    <a href="https://marketplace.visualstudio.com/items?itemName=ToddHalfpenny.sfflowvisualiser" class="tool-title" target="_blank">Flow Visualiser</a>
+                    <span class="tool-tag">Developer</span>
+                    <p class="tool-description">This VS Code extention helps you create visual representation of Flows in VS code to better understand specifically large/complex flows.</p>
                 </div>
             </div>
             <!-- Add more tools here -->
