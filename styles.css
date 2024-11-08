@@ -106,6 +106,5 @@ footer {
 .filter-buttons button.active {
     background-color: #007bb3; /* Active button color */
     color: #fff;
+    margin-bottom: 1em;
 }
-
-
